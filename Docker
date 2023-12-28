@@ -1,0 +1,8 @@
+FROM python:3.12
+
+RUN pip install pandas sqlalchemy Psycopg2 pyarrow
+
+WORKDIR /app
+COPY Ingest_data.py Ingest_data.py
+
+ENTRYPOINT [ "python", "Ingest_data.py" ]
