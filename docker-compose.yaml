@@ -2,7 +2,7 @@
 
 services:
   PostgresDatabase:
-    image: postgres:latest
+    image: postgres:12-bullseye
     environment:
       - POSTGRES_PASSWORD=mysecretpassword
     volumes:
